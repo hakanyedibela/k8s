@@ -1,12 +1,5 @@
 provider "lxd" {}
 
-variable "control_plane_count" {
-  default = 3
-}
-
-variable "worker_count" {
-  default = 7
-}
 
 resource "lxd_container" "control_planes" {
   count   = var.control_plane_count
