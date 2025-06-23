@@ -1,4 +1,14 @@
-source = "hashicorp/lxd"
+terraform {
+  required_providers {
+    lxd = {
+      source = "sl1pm4t/lxd"
+      version = ">= 1.6.0"
+    }
+  }
+}
+
+provider "lxd" {}
+
 
 resource "lxd_container" "control_planes" {
   count   = var.control_plane_count
