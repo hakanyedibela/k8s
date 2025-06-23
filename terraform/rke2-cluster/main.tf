@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     lxd = {
-      source = "sl1pm4t/lxd"
-      version = ">= 1.6.0"
+      source  = "sl1pm4t/lxd"
+      version = "0.0.1"
     }
   }
 }
