@@ -1,5 +1,4 @@
-provider "lxd" {}
-
+source = "hashicorp/lxd"
 
 resource "lxd_container" "control_planes" {
   count   = var.control_plane_count
