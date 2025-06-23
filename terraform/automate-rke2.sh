@@ -8,7 +8,7 @@ WORKERS=7
 RKE2_VERSION="v1.29.1+rke2r1"
 
 # Step 1: Terraform Apply
-cd terraform/rke2-cluster
+cd rke2-cluster
 terraform init
 terraform apply -auto-approve \
   -var="control_plane_count=$CONTROL_PLANES" \
